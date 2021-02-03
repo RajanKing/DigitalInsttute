@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#013d95"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <ImageView
+        android:id="@+id/loginLogoImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/dl_logo"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc_black_italic"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:text="Login"
+        android:textColor="#FFFDD0"
+        android:textSize="35dp"
+
+        android:textStyle="bold|italic" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_marginBottom="20dp">
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LoginUserName"
+    android:textColorHint="@color/background"
+    android:hint="UserName"
+    android:background="@color/colorAccent"
+
+style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/calligraffitti"
+        >
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginUserPassword"
+        android:hint="Password"
+        android:textColorHint="@color/background"
+        android:background="@color/colorAccent"
+
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:fontFamily="@font/calligraffitti"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/LoginForget"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:background="#00000000"
+        android:elevation="0dp"
+        android:fontFamily="@font/alegreya_sc_black_italic"
+
+        android:gravity="center_vertical|right"
+        android:text="Forgot Password?" />
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Login"
+        android:fontFamily="@font/alegreya_sc_black_italic"
+
+        android:textStyle="bold|italic"
+        android:background="@drawable/roundedcorner"
+        />
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:text="New User? Sign Up"
+        android:textColor="#FFDD00"
+        android:elevation="0dp"
+        android:fontFamily="@font/alegreya_sc_black_italic"
+
+        android:textStyle="bold|italic"
+        android:background="#00000000"
+        />
+</LinearLayout>
+</LinearLayout>

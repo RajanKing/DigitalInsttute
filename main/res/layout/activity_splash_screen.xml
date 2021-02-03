@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#013d95"
+    tools:context=".SplashScreen">
+
+    <TextView
+        android:id="@+id/splashWelcom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+
+        android:layout_marginBottom="180dp"
+
+        android:ems="10"
+        android:fontFamily="@font/calligraffitti"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="#FFFDD0"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    />
+
+    <ImageView
+        android:id="@+id/splashlogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:src="@drawable/dl_logo"
+        app:layout_constraintBottom_toTopOf="@+id/splashappname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splashWelcom" />
+
+    <TextView
+        android:id="@+id/splashappname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:fontFamily="@font/calligraffitti"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="Digital Institute"
+        android:textAlignment="center"
+        android:textColor="#FFFDD0"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/splashslogon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splashappname" />
+
+    <TextView
+        android:id="@+id/splashslogon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/condiment"
+        android:text="Actions are better than words.        "
+        android:textAlignment="textEnd"
+
+        android:textColor="#D4CAA3"
+
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/splashappname"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
