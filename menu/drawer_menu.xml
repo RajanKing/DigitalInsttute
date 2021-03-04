@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_class"
+            android:icon="@drawable/ic_school"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_liveClass"
+            android:icon="@drawable/ic_video_classes"
+            android:title="VideoClass" />
+        <item
+            android:id="@+id/nav_Library"
+            android:icon="@drawable/ic_library"
+            android:title="Library" />
+        <item
+            android:id="@+id/videoClasses"
+            android:icon="@drawable/ic_videoclasses"
+            android:title="VideoClass" />
+
+
+    </group>
+    <item
+        android:icon="@drawable/ic_status"
+        android:title="Status">
+        <menu>
+            <item
+                android:id="@+id/nav_Insitutechat"
+                android:icon="@drawable/ic_chat"
+                android:title="Chat" />
+
+            <item
+                android:id="@+id/nav_Syllabus"
+                android:icon="@drawable/ic_update"
+                android:title="Upload" />
+            <item android:id="@+id/Logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout"/>
+
+        </menu>
+
+
+    </item>
+</menu>
